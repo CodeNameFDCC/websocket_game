@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dino Game</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+
+        user-select: none;
+        touch-action: none;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        outline: none;
+        -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+      }
+      canvas {
+        border: 2px solid grey;
+      }
+    </style>
+    <!-- 전체 화면 높이를 사용하고
+     선택 관련 속성을 none으로 설정하여 사용자가 텍스트를 선택하지 못하도록 합니다.
+     캔버스에 회색 테두리를 추가하빈다. -->
+    <script src="https://cdn.socket.io/socket.io-3.0.1.min.js"></script>
+    <script src="./index.js" type="module"></script>
+
+    <!-- Socket.IO 라이브러리를 CDN에서 불러옵니다.
+     실시간 애플리케이션을 위한 라이브러리 입니다.
+     index.js를 모듈로 불러옵니다. -->
+  </head>
+  <body>
+    <canvas id="game"></canvas>
+    <!-- 게임을 그릴 캔버스를 추가합니다. -->
+  </body>
+</html>

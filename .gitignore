@@ -1,0 +1,11 @@
+# Node.js
+node_modules/
+.env
+npm-debug.log
+
+# 로그 파일
+*.log
+
+# 빌드 아티팩트
+dist/
+build/
